@@ -4,7 +4,7 @@
 ```typescript
 // background code
 scene.setBackgroundImage(assets.image`backgroundImage`)
-let nyePole = sprites.create(assets.image`poleImage`, SpriteKind.Player)
+let nyePole = sprites.create(nyeImg.poleImage, SpriteKind.Player)
 nyePole.setPosition(80, 60)
 
 // countdown image array
@@ -22,7 +22,7 @@ let countdownArray = [
 ]
 
 // nye ball drop code
-let nyeBall = sprites.create(assets.image`ballImageLarge`, SpriteKind.Player)
+let nyeBall = sprites.create(nyeImg.ballImageLarge, SpriteKind.Player)
 nyeBall.setPosition(80, 0)
 let isBallDropStarted = false
 game.splash("Press A to start the", "New Years Countdown!")
@@ -53,8 +53,8 @@ function callBallDrop () {
 }
 
 function callFireworks () {
-    let fireworks1 = sprites.create(assets.image`fireworkImageOrange`, SpriteKind.Player)
-    let fireworks2 = sprites.create(assets.image`fireworkImageGreen`, SpriteKind.Player)
+    let fireworks1 = sprites.create(nyeImg.fireworkImageOrange, SpriteKind.Player)
+    let fireworks2 = sprites.create(nyeImg.fireworkImageGreen, SpriteKind.Player)
     fireworks1.setPosition(43, 57)
     fireworks2.setPosition(117, 73)
     animation.runImageAnimation(fireworks1, assets.animation`fireworkAnimOrange`, 100, true)
@@ -410,3 +410,7 @@ Click Done to open your game in MakeCode Arcade, where you can add to your code 
 Happy coding!
 
 ![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
+
+```package
+nyeImg=github:Code-Ninjas-Home_Office/new-year-new-code-image-pack
+```
