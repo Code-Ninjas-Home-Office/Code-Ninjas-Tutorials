@@ -1,67 +1,6 @@
 # New Year, New Code!
 ### @diffs true
 
-```typescript
-// background code
-scene.setBackgroundImage(nyeImg.backgroundImage)
-let nyePole = sprites.create(nyeImg.poleImage, SpriteKind.Player)
-nyePole.setPosition(80, 60)
-
-// countdown image array
-let countdownArray = [
-    nyeImg.img10,
-    nyeImg.img09,
-    nyeImg.img08,
-    nyeImg.img07,
-    nyeImg.img06,
-    nyeImg.img05,
-    nyeImg.img04,
-    nyeImg.img03,
-    nyeImg.img02,
-    nyeImg.img01
-]
-
-// nye ball drop code
-let nyeBall = sprites.create(nyeImg.ballImageLarge, SpriteKind.Player)
-nyeBall.setPosition(80, 0)
-let isBallDropStarted = false
-game.splash("Press A to start the", "New Years Countdown!")
-
-// nye ball drop event
-controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-    if (!(isBallDropStarted)) {
-        isBallDropStarted = true
-        callBallDrop()
-    }
-    scene.setBackgroundImage(nyeImg.backgroundImage2024)
-    music.play(music.createSong(nyeImg.nyeSong), music.PlaybackMode.InBackground)
-    callFireworks()
-})
-
-// nye ball drop functions
-function callBallDrop () {
-    for (let index = 0; index < 10; index++) {
-        let countdownNum = sprites.create(countdownArray.shift(), SpriteKind.Player)
-        countdownNum.setPosition(80, 60)
-        for (let index = 0; index < 5; index++) {
-            pause(200)
-            countdownNum.changeScale(0.5, ScaleAnchor.Middle)
-        }
-        nyeBall.y += scene.screenHeight() / 10
-        sprites.destroy(countdownNum)
-    }
-}
-
-function callFireworks () {
-    let fireworks1 = sprites.create(nyeImg.fireworkImageOrange, SpriteKind.Player)
-    let fireworks2 = sprites.create(nyeImg.fireworkImageGreen, SpriteKind.Player)
-    fireworks1.setPosition(43, 57)
-    fireworks2.setPosition(117, 73)
-    animation.runImageAnimation(fireworks1, assets.animation`fireworkAnimOrange`, 100, true)
-    animation.runImageAnimation(fireworks2, assets.animation`fireworkAnimGreen`, 200, true)
-}
-```
-
 ```template
 // background code
 scene.setBackgroundImage(nyeImg.backgroundImage)
