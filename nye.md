@@ -3,22 +3,22 @@
 
 ```typescript
 // background code
-scene.setBackgroundImage(assets.image`backgroundImage`)
+scene.setBackgroundImage(nyeImg.backgroundImage)
 let nyePole = sprites.create(nyeImg.poleImage, SpriteKind.Player)
 nyePole.setPosition(80, 60)
 
 // countdown image array
 let countdownArray = [
-    assets.image`img10`,
-    assets.image`img09`,
-    assets.image`img08`,
-    assets.image`img07`,
-    assets.image`img06`,
-    assets.image`img05`,
-    assets.image`img04`,
-    assets.image`img03`,
-    assets.image`img02`,
-    assets.image`img01`
+    nyeImg.img10,
+    nyeImg.img09,
+    nyeImg.img08,
+    nyeImg.img07,
+    nyeImg.img06,
+    nyeImg.img05,
+    nyeImg.img04,
+    nyeImg.img03,
+    nyeImg.img02,
+    nyeImg.img01
 ]
 
 // nye ball drop code
@@ -33,8 +33,8 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
         isBallDropStarted = true
         callBallDrop()
     }
-    scene.setBackgroundImage(assets.image`backgroundImage2024`)
-    music.play(music.createSong(assets.song`nyeSong`), music.PlaybackMode.InBackground)
+    scene.setBackgroundImage(nyeImg.backgroundImage2024)
+    music.play(music.createSong(nyeImg.nyeSong), music.PlaybackMode.InBackground)
     callFireworks()
 })
 
@@ -64,22 +64,22 @@ function callFireworks () {
 
 ```template
 // background code
-scene.setBackgroundImage(assets.image`backgroundImage`)
-let nyePole = sprites.create(assets.image`poleImage`, SpriteKind.Player)
+scene.setBackgroundImage(nyeImg.backgroundImage)
+let nyePole = sprites.create(nyeImg.poleImage, SpriteKind.Player)
 nyePole.setPosition(80, 60)
 
 // countdown image array
 let countdownArray = [
-    assets.image`img10`,
-    assets.image`img09`,
-    assets.image`img08`,
-    assets.image`img07`,
-    assets.image`img06`,
-    assets.image`img05`,
-    assets.image`img04`,
-    assets.image`img03`,
-    assets.image`img02`,
-    assets.image`img01`
+    nyeImg.img10,
+    nyeImg.img09,
+    nyeImg.img08,
+    nyeImg.img07,
+    nyeImg.img06,
+    nyeImg.img05,
+    nyeImg.img04,
+    nyeImg.img03,
+    nyeImg.img02,
+    nyeImg.img01
 ]
 
 // nye ball drop code
@@ -136,7 +136,7 @@ Learn how to add a sprite and set its position in MakeCode Arcade's JavaScript e
 
 ```typescript
 // nye ball drop code
-let nyeBall = sprites.create(assets.image`ballImageSmall`, SpriteKind.Player)
+let nyeBall = sprites.create(nyeImg.ballImageSmall, SpriteKind.Player)
 nyeBall.setPosition(80,0)
 ```
 
@@ -264,8 +264,8 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     callFireworks()
 })
 function callFireworks () {
-    let fireworks1 = sprites.create(assets.image`fireworkImageOrange`, SpriteKind.Player)
-    let fireworks2 = sprites.create(assets.image`fireworkImageGreen`, SpriteKind.Player)
+    let fireworks1 = sprites.create(nyeImg.fireworkImageOrange, SpriteKind.Player)
+    let fireworks2 = sprites.create(nyeImg.fireworkImageGreen, SpriteKind.Player)
     fireworks1.setPosition(43, 57)
     fireworks2.setPosition(117, 73)
 }
@@ -287,8 +287,8 @@ Add animation to enhance the fireworks display!
 
 ```typescript
 function callFireworks () {
-    let fireworks1 = sprites.create(assets.image`fireworkImageOrange`, SpriteKind.Player)
-    let fireworks2 = sprites.create(assets.image`fireworkImageGreen`, SpriteKind.Player)
+    let fireworks1 = sprites.create(nyeImg.fireworkImageOrange, SpriteKind.Player)
+    let fireworks2 = sprites.create(nyeImg.fireworkImageGreen, SpriteKind.Player)
     fireworks1.setPosition(43, 57)
     fireworks2.setPosition(117, 73)
     animation.runImageAnimation(fireworks1, assets.animation`fireworkAnimOrange`, 100, true)
@@ -313,7 +313,7 @@ To prevent an error that might occur if the A button is pressed more than once, 
 
 ```typescript
 // nye ball drop code
-let nyeBall = sprites.create(assets.image`ballImageSmall`, SpriteKind.Player)
+let nyeBall = sprites.create(nyeImg.ballImageSmall, SpriteKind.Player)
 nyeBall.setPosition(80,0)
 let isBallDropStarted = false
 
@@ -342,27 +342,27 @@ Try out these customizations to enhance your New Year's Eve Ball Drop project!
 
 ```typescript
 // background code
-scene.setBackgroundImage(assets.image`backgroundImage`)
-let nyePole = sprites.create(assets.image`poleImage`, SpriteKind.Player)
+scene.setBackgroundImage(nyeImg.backgroundImage)
+let nyePole = sprites.create(nyeImg.poleImage, SpriteKind.Player)
 nyePole.setPosition(80, 60)
 game.splash("Press A to start the", "New Years Countdown!")
 
 // countdown image array
 let countdownArray = [
-    assets.image`img10`,
-    assets.image`img09`,
-    assets.image`img08`,
-    assets.image`img07`,
-    assets.image`img06`,
-    assets.image`img05`,
-    assets.image`img04`,
-    assets.image`img03`,
-    assets.image`img02`,
-    assets.image`img01`
+    nyeImg.img10,
+    nyeImg.img09,
+    nyeImg.img08,
+    nyeImg.img07,
+    nyeImg.img06,
+    nyeImg.img05,
+    nyeImg.img04,
+    nyeImg.img03,
+    nyeImg.img02,
+    nyeImg.img01
 ]
 
 // nye ball drop code
-let nyeBall = sprites.create(assets.image`ballImageSmall`, SpriteKind.Player)
+let nyeBall = sprites.create(nyeImg.ballImageSmall, SpriteKind.Player)
 nyeBall.setPosition(80,0)
 let isBallDropStarted = false
 
@@ -371,7 +371,7 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     if (!(isBallDropStarted)) {
         isBallDropStarted = true
         callBallDrop()
-        scene.setBackgroundImage(assets.image`backgroundImage2024`)
+        scene.setBackgroundImage(nyeImg.backgroundImage2024)
         music.play(music.createSong(assets.song`nyeSong`), music.PlaybackMode.InBackground)
         callFireworks()
     }
@@ -392,8 +392,8 @@ function callBallDrop () {
 }
 
 function callFireworks () {
-    let fireworks1 = sprites.create(assets.image`fireworkImageOrange`, SpriteKind.Player)
-    let fireworks2 = sprites.create(assets.image`fireworkImageGreen`, SpriteKind.Player)
+    let fireworks1 = sprites.create(nyeImg.fireworkImageOrange, SpriteKind.Player)
+    let fireworks2 = sprites.create(nyeImg.fireworkImageGreen, SpriteKind.Player)
     fireworks1.setPosition(43, 57)
     fireworks2.setPosition(117, 73)
     animation.runImageAnimation(fireworks1, assets.animation`fireworkAnimOrange`, 100, true)
