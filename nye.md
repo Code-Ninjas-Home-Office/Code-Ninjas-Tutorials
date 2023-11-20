@@ -33,7 +33,6 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
         isBallDropStarted = true
         callBallDrop()
     }
-    scene.setBackgroundImage(nyeImg.backgroundImage2024)
     music.play(music.createSong(nyeImg.nyeSong), music.PlaybackMode.InBackground)
     callFireworks()
 })
@@ -125,9 +124,9 @@ Learn how to add a sprite and set its position in MakeCode Arcade's JavaScript e
 
 ---
 
-- :paper plane: Open ``||sprites:Sprites||`` and drag out the ``||sprites:sprite (img) of kind (kind)||`` code block under the **// nye ball drop code** code comment.
+- :paper plane: Use the **Enter** key to create a space under the **// nye ball drop code** code comment. Open ``||sprites:Sprites||`` and drag out the ``||sprites:sprite (img) of kind (kind)||`` code block into the blank space.
 - :paper plane: Replace **mySprite** with a **variable** name for the sprite, such as ``||sprites:nyeBall||``.
-- :art: Click the palette icon to the left of the line number, then select the **ballImageSmall** from **My Assets** as the sprite image.
+- :art: Click the palette icon to the left of the line number, then select the **ballImageSmall** from the **Gallery** as the sprite image.
 - :paper plane: Underneath, type the sprite name followed by a **dot operator** ``||.||`` then select ``||sprites:setPosition||`` from the **code completion** tool.
 - :paper plane: Add a parenthesis ``||(||`` then type the x and y position for the sprite, separated by a comma. To center the sprite at the top of the screen, use ``||sprites:(80,0)||``.
 - :play: Click the Play button to see the NYE ball sprite appear on screen! 
@@ -146,7 +145,7 @@ The New Year's Eve Ball Drop usually happens as peopple count down from 10. Let'
 
 ---
 
-- :function: Find the ``||function: function callBallDrop||`` code under the **// nye ball drop functions** comment. Use the **Enter** key to add a space inside the curly brackets **{ }** of the function, then press the **Tab** key to indent that line of code.
+- :function: Find the ``||function: function callBallDrop||`` code under the **// nye ball drop functions** comment. Use the **Enter** key to add an indented line inside the curly brackets **{ }** of the function.
 - :repeat: Open ``||loops:Loops||`` and drag out the ``||loops:for||`` code block onto the indented line inside the **function definition**.
 - :repeat: We want the loop to run a total of 10 times, so replace the number 5 with a **10**.
 - :paper plane: Indented inside the **loop**, type the NYE ball sprite name, a dot operator ``||.||`` and a ``||sprites:y||``. Then type ``||+=||`` to add an **addition assignment operator** that will add and store a value to the y-position of the sprite each time the loop runs.
@@ -169,7 +168,7 @@ Use the A button to begin the New Year's Eve Ball Drop!
 
 ---
 
-- :game controller: Find the ``||controller:controller.A.onEvent||`` code under the **// nye ball drop event** comment. Use the **Enter** key to add a space inside the curly brackets **{ }** of the function, then press the **Tab** key to indent that line of code.
+- :game controller: Find the ``||controller:controller.A.onEvent||`` code under the **// nye ball drop event** comment. Use the **Enter** key to add an indented line inside the curly brackets **{ }** of the function.
 - :function: On the indented line inside, type ``||function:callBallDrop()||`` to call the code just added to the ``||function:callBallDrop||`` **function definition**.
 - :game controller: Press the A button on the MakeCode Arcade emulator, or use your computer's space key to start the New Year's Eve Ball Drop!
 - :repeat: Oh no! The sprite dropped too quickly! Inside the ``||function:callBallDrop||`` function definition, **above** the ``||sprites:y||`` code, type ``||loops:pause(1000)||`` to add a 1-second pause each time the loop runs.
@@ -249,9 +248,9 @@ Add some fireworks on either side of the pole that will explode after the New Ye
 
 ---
 
-- :function: Find the ``||function: function callFireworks||`` code under the **// nye ball drop functions** comment. Use the **Enter** key to add a space inside the curly brackets **{ }** of the function, then press the **Tab** key to indent that line of code.
+- :function: Find the ``||function: function callFireworks||`` code under the **// nye ball drop functions** comment. Use the **Enter** key to add an indented line inside the curly brackets **{ }** of the function.
 - :paper plane: Inside the ``||function:callFireworks||`` **function definition** add code from ``||sprites:Sprites||`` to create **2** different fireworks sprites.
-- :paper plane: Use **fireworkImageOrange** and **fireworkImageGreen** from **My Assets** for the 2 new sprites.
+- :paper plane: Use **fireworkImageOrange** and **fireworkImageGreen** from the **Gallery** for the 2 new sprites.
 - :paper plane: Use the ``||sprites:setPosition||`` function to set the position for each sprite, 1 on each side of the NYE Ball Drop pole.
 - :game controller: Inside ``||controller:controller.A.onEvent||`` add ``||function:callFireworks||`` under the ``||function:callBallDrop||`` code to make the fireworks appear after the ball drop code runs.
 
