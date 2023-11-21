@@ -213,7 +213,7 @@ Create a 10 second countdown that displays on screen as the ball drops!
 
 - :numbered list: Find the ``||arrays:countdownArray||`` under the **// countdown image array** comment. This **array** is a list of images that will be used to create an on-screen countdown.
 - :function: Inside the ``||function:callBallDrop||`` **function definition**, insert a line above the ``||loops:pause||`` code. Add code from ``||sprites:Sprites||`` to add another sprite to the project. Name the new sprite ``||sprites:countdownNum||``.
-- :numbered list: Replace the image parameter code with the name of the ``||arrays:countdownArray||``. Add a ``||.||`` and the **array function** ``||arrays:shift()||`` which will remove and use the first item in the **array**.
+- :numbered list: Delete the image parameter code and replace it with the name of the ``||arrays:countdownArray||``. Add a ``||.||`` and the **array function** ``||arrays:shift()||`` which will remove and use the first item in the **array**.
 - :paper plane: On the line below, type the name of the countdown sprite, a ``||.||`` and the ``||sprites:setPosition||`` function to position the countdown numbers on screen. Add parentheses then type an x- and y-position for the sprite inside.
 
 ![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
@@ -292,7 +292,7 @@ Add animation to enhance the fireworks display!
 
 - :refresh: Open ``||animation:Animation||`` to add 2 ``||animation:animate (mySprite) frames (frames)||`` code blocks into the ``||function:callFireworks||`` **function definition** to animate the firework sprites.
 - :refresh: Replace ``||null||`` with the name of a firework sprite. 
-- :refresh: Replace ``||[]||`` with **assets.animation** and the name of the matching firework animation from the **Assets** tab.
+- :refresh: Replace ``||[]||`` with **assets.animation**, two backticks ``||`||`` and the name of the matching firework animation: **fireworkAnimGreen** or **fireworkAnimOrange**.
 - :refresh: Adjust the **frameInterval** parameter to determine the speed of the firework animation. 
 - :refresh: Change the **loop** parameter to True if you want the firework animation to continue running.
 
@@ -348,7 +348,7 @@ Try out these customizations to enhance your New Year's Eve Ball Drop project!
 
 - :circle: Use ``||game:game.splash||`` to display a message at the beginning of your project. Use this to tell the player what key to press to start the ball drop!
 - :tree: Use a ``||scene:scene.setBackgroundImage||`` function to create a new background image with a celebratory message that will be displayed after the countdown has ended!
-- :headphones: Use ``||music:music.play||`` with the ``||music:music.createSong||`` function to play celebratory music before, during, or after the ball drop!
+- :headphones: Use ``||music:music.play()||`` with ``||music:music.createSong(), music.PlaybackMode.InBackground||`` inside to play celebratory music before, during, or after the ball drop! Inside the parentheses of ``||music:music.createSong||``, type **assets.song** and 2 backticks ``||`||`` then click the music notes to the left of the line number to open the Music Editor.
 - :repeat: To add some pizzazz to your countdown, replace ``||loops:pause(1000)||`` with this code to make the countdown numbers grow in **scale** when they appear on screen: ![image](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/countdown%20number%20scale.png?raw=true "countdown number scaling code")
 
 ![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
