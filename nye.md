@@ -114,7 +114,7 @@ function callFireworks () {
 
 ## New Year, New Code! @showdialog
 
-The New Year is a great time to try something new! Let's try out some coding in JavaScript - which is what you'll use in IMPACT's Orange, Green, and Blue belt - to ring in the new year!
+The New Year is a great time to try something new! Let's try out some coding in JavaScript - which is what you'll use in IMPACT's Orange, Green, and Blue belts - to ring in the new year!
 
 Click ``||loops:Ok||`` to get started!
 
@@ -126,7 +126,7 @@ Take a look at the JavaScript code already in the code editor. Be sure not to de
 
 ---
 
-- :null: Lines of code that start with **//** are called **code comments** and are used to give the coder or someone reading the code more information. They do not affect how the program runs. How many **code comments** do you see on screen?
+- :comment: Lines of code that start with **//** are called **code comments** and are used to give the coder or someone reading the code more information. They do not affect how the program runs. How many **code comments** do you see on screen?
 
 - :play: Click the Play button to see what parts of the project are already in the starter code. You should see a night sky background image and a New Years Eve Pole in the middle of the screen, ready for the ball drop at midnight!
 
@@ -140,30 +140,30 @@ Learn how to add a sprite and set its position in MakeCode Arcade's JavaScript e
 
 - :paper plane: Use the **Enter** key to create a line under the **// nye ball drop code** code comment. Open ``||sprites:Sprites||`` and drag out the ``||sprites:sprite (img) of kind (kind)||`` code block into the blank line.
 - :paper plane: Replace **mySprite** with a **variable** name for the sprite, such as ``||sprites:nyeBall||``.
-- :art: Click the palette icon to the left of the line number, then select the **ballImageSmall** from the **Gallery** as the sprite image.
-- :paper plane: Underneath, type the sprite name followed by a **dot operator** ``||.||`` then select ``||sprites:setPosition||`` from the **code completion** tool.
-- :paper plane: Add a parenthesis ``||(||`` then type the x and y position for the sprite, separated by a comma. To center the sprite at the top of the screen, use ``||sprites:(80,0)||``.
+- :image: Click the palette icon to the left of the line number, then select the **NYE Ball image** from the **Gallery** as the sprite image.
+- :paper plane: Underneath, type the sprite name followed by a **dot operator** ``||sprites:.||`` then select ``||sprites:setPosition||`` from the **code completion** tool.
+- :paper plane: Add a parenthesis ``||sprites:(||`` then type the x and y position for the sprite, separated by a comma. To center the sprite at the top of the screen, use ``||sprites:(80,0)||``.
 - :play: Click the Play button to see the NYE ball sprite appear on screen! 
 
 ![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
 
 ```typescript
 // nye ball drop code
-let nyeBall = sprites.create(nyeImg.ballImageSmall, SpriteKind.Player)
+let nyeBall = sprites.create(img``, SpriteKind.Player)
 nyeBall.setPosition(80,0)
 ```
 
 ## Begin the New Year's Eve Ball Drop!
 
-The New Year's Eve Ball Drop usually happens as peopple count down from 10. Let's first program the ball sprite to descend before we add in the countdown!
+The New Year's Eve Ball Drop usually happens as people count down from 10. Let's first program the ball sprite to descend before we add in the countdown!
 
 ---
 
 - :function: Find the ``||function: function callBallDrop||`` code under the **// nye ball drop functions** comment. Use the **Enter** key to add an indented line inside the curly brackets **{ }** of the function.
 - :repeat: Open ``||loops:Loops||`` and drag out the ``||loops:for||`` code block onto the indented line inside the **function definition**.
 - :repeat: We want the loop to run a total of 10 times, so replace the number 5 with a **10**.
-- :paper plane: Indented inside the curly brackets **{}** of the **loop**, type the NYE ball sprite name, a dot operator ``||.||`` and a ``||sprites:y||``. Then type ``||+=||`` to add an **addition assignment operator** that will add and store a value to the y-position of the sprite each time the loop runs.
-- :tree: Since we know we want the ball to drop the height of the screen divided by 10, type ``||scene:scene.screenHeight()||`` followed by a ``||math:/||`` and the number **10**.
+- :paper plane: Indented inside the curly brackets **{}** of the **loop**, type the NYE ball sprite name, a dot operator ``||sprites:.||`` and a ``||sprites:y||``. Then type ``||variables:+=||`` to add an **addition assignment operator** that will increase the sprite's y-position each time the loop runs.
+- :tree: Since we know we want the ball to drop the height of the screen divided by 10, type ``||scene:scene.screenHeight()||`` followed by ``||math:/||`` and the number **10**.
 
 ![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
 
@@ -211,10 +211,11 @@ Create a 10 second countdown that displays on screen as the ball drops!
 
 ---
 
-- :numbered list: Find the ``||arrays:countdownArray||`` under the **// countdown image array** comment. This **array** is a list of images that will be used to create an on-screen countdown.
+- :numbered list: Find the ``||arrays:countdownArray||`` under the **// countdown image array** comment. This **array** is a list of number images that will be used to create an on-screen countdown.
 - :function: Inside the ``||function:callBallDrop||`` **function definition**, insert a line above the ``||loops:pause||`` code. Add code from ``||sprites:Sprites||`` to add another sprite to the project. Name the new sprite ``||sprites:countdownNum||``.
-- :numbered list: Delete the image parameter code and replace it with the name of the ``||arrays:countdownArray||``. Add a ``||.||`` and the **array function** ``||arrays:shift()||`` which will remove and use the first item in the **array**.
-- :paper plane: On the line below, type the name of the countdown sprite, a ``||.||`` and the ``||sprites:setPosition||`` function to position the countdown numbers on screen. Add parentheses then type an x- and y-position for the sprite inside.
+- :numbered list: Delete the image parameter code and replace it with the name of the ``||arrays:countdownArray||``. Add a ``||arrays:.||`` and the **array function** ``||arrays:shift()||`` which will remove and use the first item in the **array**.
+- :paper plane: On the line below, type the name of the countdown sprite, a ``||sprites:.||`` and the ``||sprites:setPosition||`` function to position the countdown numbers on screen. Add parentheses then type an x- and y-position for the countdown sprite inside.
+- :play: Click the Play button to test the code, adjusting the position of the countdown numbers as needed. Do you notice anything that needs to be fixed?
 
 ![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
 
@@ -237,8 +238,7 @@ Remove the countdown numbers after they have appeared on screen!
 ---
 
 - :repeat: Inside the ``||loops:for||`` loop, add a new line underneath the existing code.
-- :paper plane: Using the **code completion** tool, add the ``||sprites:sprites.destroy||`` function on the blank line.
-- :paper plane: Add parentheses then type the countdown sprite name inside.
+- :paper plane: Type ``||sprites:sprites.destroy||`` on the blank line. Add parentheses then type the name of the countdown sprite inside.
 - :play: Click the Play button to test the countdown to ensure the ball drops and the countdown numbers appear and then disappear on screen, as expected.
 
 ![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
@@ -277,8 +277,8 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     callFireworks()
 })
 function callFireworks () {
-    let fireworks1 = sprites.create(nyeImg.fireworkImageOrange, SpriteKind.Player)
-    let fireworks2 = sprites.create(nyeImg.fireworkImageGreen, SpriteKind.Player)
+    let fireworks1 = sprites.create(img``, SpriteKind.Player)
+    let fireworks2 = sprites.create(img``, SpriteKind.Player)
     fireworks1.setPosition(43, 57)
     fireworks2.setPosition(117, 73)
 }
@@ -292,16 +292,17 @@ Add animation to enhance the fireworks display!
 
 - :refresh: Open ``||animation:Animation||`` to add 2 ``||animation:animate (mySprite) frames (frames)||`` code blocks into the ``||function:callFireworks||`` **function definition** to animate the firework sprites.
 - :refresh: Replace ``||null||`` with the name of a firework sprite. 
-- :refresh: Replace ``||[]||`` with **assets.animation**, two backticks ``||`||`` and the name of the matching firework animation: **fireworkAnimGreen** or **fireworkAnimOrange**.
+- :refresh: Replace ``||[]||`` with **assets.animation**, two backticks ``||`||`` and the name of the matching firework animation: **fireworkAnimOrange** or **fireworkAnimGreen** to access the animation asset stored in the project file.
 - :refresh: Adjust the **frameInterval** parameter to determine the speed of the firework animation. 
 - :refresh: Change the **loop** parameter to True if you want the firework animation to continue running.
+- :play: Click the Play button to test the animation code, then adjust the animation parameters to change the firework animation.
 
 ![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
 
 ```typescript
 function callFireworks () {
-    let fireworks1 = sprites.create(nyeImg.fireworkImageOrange, SpriteKind.Player)
-    let fireworks2 = sprites.create(nyeImg.fireworkImageGreen, SpriteKind.Player)
+    let fireworks1 = sprites.create(img``, SpriteKind.Player)
+    let fireworks2 = sprites.create(img``, SpriteKind.Player)
     fireworks1.setPosition(43, 57)
     fireworks2.setPosition(117, 73)
     animation.runImageAnimation(fireworks1, assets.animation`fireworkAnimOrange`, 100, true)
@@ -311,16 +312,17 @@ function callFireworks () {
 
 ## Avoid an error if the A button is pressed more than once!
 
-To prevent an error that might occur if the A button is pressed more than once, add this code!
+If the A button is pressed more than once, an error will occur because there are no more images left in the array for the code to run again. To prevent this error, add this code!
 
 ---
 
 - :list: Under the existing code underneath the **// nye ball drop code** comment, declare a new variable with the keyword ``||variables:let||`` and the name **isBallDropStarted**.
-- :list: Use an **assignment operator** ``||=||`` to set the variable to **false**.
+- :list: Use an **assignment operator** ``||variables:=||`` to set the variable to **false**.
 - :shuffle: Inside the ``||controller:controller.A.onEvent||`` add a blank line above the code inside. Type ``||logic:if()||`` to add a **conditional** that will check the status of the **isBallDropStarted** variable.
 - :shuffle: Inside the parentheses of the ``||logic:if||`` type ``||logic:!isBallDropStarted||`` to check if the variable is *not true*. 
-- :shuffle: Type an open curly brace ``||{||`` after the parentheses. Then indent the other code inside, and type a closed curly brace ``||}||`` on the line below.
-- :list: Inside the ``||logic:if||`` statement, set the variable to **true** above the other code by typing **isBallDropStarted = true**.
+- :shuffle: Type an open curly brace ``||logic:{||`` after the parentheses. With your cursor inside the curly brackets **{}** use the **Enter** key to add an indented line below, moving the closed curly brace to the line below that.
+- :list: On the new line, type **isBallDropStarted = true**. Below, copy/paste ``||function:callBallDrop()||`` and ``||function:callFireworks()||`` inside the curly brackets.
+- :play: Click the Play button to test that pressing the A key more than once does not create an error in your program.
 
 ![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
 
@@ -347,8 +349,7 @@ Try out these customizations to enhance your New Year's Eve Ball Drop project!
 ---
 
 - :circle: Use ``||game:game.splash||`` to display a message at the beginning of your project. Use this to tell the player what key to press to start the ball drop!
-- :tree: Use a ``||scene:scene.setBackgroundImage||`` function to create a new background image with a celebratory message that will be displayed after the countdown has ended!
-- :headphones: Use ``||music:music.play()||`` with ``||music:music.createSong(), music.PlaybackMode.InBackground||`` inside to play celebratory music before, during, or after the ball drop! Inside the parentheses of ``||music:music.createSong||``, type **assets.song** and 2 backticks ``||`||`` then click the music notes to the left of the line number to open the Music Editor.
+- :tree: Use a ``||scene:scene.setBackgroundImage||`` function to create a new background image with a celebratory message to display after the countdown has ended!
 - :repeat: To add some pizzazz to your countdown, replace ``||loops:pause(1000)||`` with this code to make the countdown numbers grow in **scale** when they appear on screen: ![image](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/countdown%20number%20scale.png?raw=true "countdown number scaling code")
 
 ![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
@@ -416,9 +417,9 @@ function callFireworks () {
 
 ## Congratulations on finishing your project!
 
-Happy New Year! There are so many exciting things to learn at Code Ninjas in the year ahead! Keep on working through the belt levels in IMPACT to learn how to code cool games with blocks and JavaScript!
+Happy New Year! There are so many exciting things to learn at Code Ninjas in the year ahead! Keep on working through the belt levels in IMPACT to learn how to code cool projects and games with blocks and JavaScript!
 
-Click Done to open your game in MakeCode Arcade, where you can add to your code and create a link to share your game with others! 
+Click Done to open your project in MakeCode Arcade, where you can add to your code and create a link to share your project with others! 
 
 Happy coding!
 
