@@ -124,7 +124,7 @@ Learn how to add a sprite and set its position in MakeCode Arcade's JavaScript e
 
 ---
 
-- :paper plane: Use the **Enter** key to create a space under the **// nye ball drop code** code comment. Open ``||sprites:Sprites||`` and drag out the ``||sprites:sprite (img) of kind (kind)||`` code block into the blank space.
+- :paper plane: Use the **Enter** key to create a line under the **// nye ball drop code** code comment. Open ``||sprites:Sprites||`` and drag out the ``||sprites:sprite (img) of kind (kind)||`` code block into the blank line.
 - :paper plane: Replace **mySprite** with a **variable** name for the sprite, such as ``||sprites:nyeBall||``.
 - :art: Click the palette icon to the left of the line number, then select the **ballImageSmall** from the **Gallery** as the sprite image.
 - :paper plane: Underneath, type the sprite name followed by a **dot operator** ``||.||`` then select ``||sprites:setPosition||`` from the **code completion** tool.
@@ -198,7 +198,7 @@ Create a 10 second countdown that displays on screen as the ball drops!
 ---
 
 - :numbered list: Find the ``||arrays:countdownArray||`` under the **// countdown image array** comment. This **array** is a list of images that will be used to create an on-screen countdown.
-- :function: Inside the ``||function:callBallDrop||`` **function definition**, insert a space above the ``||loops:pause||`` code. Add code from ``||sprites:Sprites||`` to add another sprite to the project. Name the new sprite ``||sprites:countdownNum||``.
+- :function: Inside the ``||function:callBallDrop||`` **function definition**, insert a line above the ``||loops:pause||`` code. Add code from ``||sprites:Sprites||`` to add another sprite to the project. Name the new sprite ``||sprites:countdownNum||``.
 - :numbered list: Replace the image parameter code with the name of the ``||arrays:countdownArray||``. Add a ``||.||`` and the **array function** ``||arrays:shift()||`` which will remove and use the first item in the **array**.
 - :paper plane: On the line below, type the name of the countdown sprite, a ``||.||`` and the ``||sprites:setPosition||`` function to position the countdown numbers on screen. Add parentheses then type an x- and y-position for the sprite inside.
 
