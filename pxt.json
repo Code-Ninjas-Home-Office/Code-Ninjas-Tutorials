@@ -9,7 +9,8 @@
         "main.ts",
         "README.md",
         "assets.json",
-        "nye.md"
+        "nye.md",
+        "santa.md"
     ],
     "testFiles": [
         "test.ts"
