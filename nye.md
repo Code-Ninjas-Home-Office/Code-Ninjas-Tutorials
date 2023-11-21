@@ -29,7 +29,7 @@ game.splash("Press A to start the", "New Years Countdown!")
 
 // nye ball drop event
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-    if (!(isBallDropStarted)) {
+    if (!isBallDropStarted) {
         isBallDropStarted = true
         callBallDrop()
     }
@@ -266,7 +266,7 @@ Add some fireworks on either side of the pole that will explode after the New Ye
 - :paper plane: Inside the ``||function:callFireworks||`` **function definition** add code from ``||sprites:Sprites||`` to create **2** different fireworks sprites.
 - :paper plane: Use **fireworkImageOrange** and **fireworkImageGreen** from the **Gallery** for the 2 new sprites.
 - :paper plane: Use the ``||sprites:setPosition||`` function to set the position for each sprite, 1 on each side of the NYE Ball Drop pole.
-- :game controller: Inside ``||controller:controller.A.onEvent||`` add ``||function:callFireworks||`` under the ``||function:callBallDrop||`` code to make the fireworks appear after the ball drop code runs.
+- :game controller: Inside ``||controller:controller.A.onEvent||`` add ``||function:callFireworks()||`` under the ``||function:callBallDrop()||`` code to make the fireworks appear after the ball drop code runs.
 
 ![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
 
@@ -318,7 +318,7 @@ To prevent an error that might occur if the A button is pressed more than once, 
 - :list: Under the existing code underneath the **// nye ball drop code** comment, declare a new variable with the keyword ``||variables:let||`` and the name **isBallDropStarted**.
 - :list: Use an **assignment operator** ``||=||`` to set the variable to **false**.
 - :shuffle: Inside the ``||controller:controller.A.onEvent||`` add a blank line above the code inside. Type ``||logic:if()||`` to add a **conditional** that will check the status of the **isBallDropStarted** variable.
-- :shuffle: Inside the parentheses of the ``||logic:if||`` type ``||logic:!(isBallDropStarted)||`` to check if the variable is *not true*. 
+- :shuffle: Inside the parentheses of the ``||logic:if||`` type ``||logic:!isBallDropStarted||`` to check if the variable is *not true*. 
 - :shuffle: Type an open curly brace ``||{||`` after the parentheses. Then indent the other code inside, and type a closed curly brace ``||}||`` on the line below.
 - :list: Inside the ``||logic:if||`` statement, set the variable to **true** above the other code by typing **isBallDropStarted = true**.
 
@@ -332,7 +332,7 @@ let isBallDropStarted = false
 
 // nye ball drop event
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-    if (!(isBallDropStarted)) {
+    if (!isBallDropStarted) {
         isBallDropStarted = true
         callBallDrop()
         callFireworks()
@@ -347,7 +347,7 @@ Try out these customizations to enhance your New Year's Eve Ball Drop project!
 ---
 
 - :circle: Use ``||game:game.splash||`` to display a message at the beginning of your project. Use this to tell the player what key to press to start the ball drop!
-- :tree: In the **Assets** tab, duplicate the background image and write a celebratory message on it. Use a ``||scene:scene.setBackgroundImage||`` function to display the new background image after the countdown has ended!
+- :tree: Use a ``||scene:scene.setBackgroundImage||`` function to create a new background image with a celebratory message that will be displayed after the countdown has ended!
 - :headphones: Use ``||music:music.play||`` with the ``||music:music.createSong||`` function to play celebratory music before, during, or after the ball drop!
 - :repeat: To add some pizzazz to your countdown, replace ``||loops:pause(1000)||`` with this code to make the countdown numbers grow in **scale** when they appear on screen: ![image](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/countdown%20number%20scale.png?raw=true "countdown number scaling code")
 
@@ -381,7 +381,7 @@ let isBallDropStarted = false
 
 // nye ball drop event
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-    if (!(isBallDropStarted)) {
+    if (!isBallDropStarted) {
         isBallDropStarted = true
         callBallDrop()
         scene.setBackgroundImage(nyeImg.backgroundImage2024)
