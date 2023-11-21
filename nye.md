@@ -22,7 +22,7 @@ let countdownArray = [
 ]
 
 // nye ball drop code
-let nyeBall = sprites.create(nyeImg.ballImageLarge, SpriteKind.Player)
+let nyeBall = sprites.create(nyeImg.ballImage, SpriteKind.Player)
 nyeBall.setPosition(80, 0)
 let isBallDropStarted = false
 game.splash("Press A to start the", "New Years Countdown!")
@@ -32,9 +32,9 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     if (!isBallDropStarted) {
         isBallDropStarted = true
         callBallDrop()
+        music.play(music.createSong(nyeImg.nyeSong), music.PlaybackMode.InBackground)
+        callFireworks()
     }
-    music.play(music.createSong(nyeImg.nyeSong), music.PlaybackMode.InBackground)
-    callFireworks()
 })
 
 // nye ball drop functions
@@ -100,14 +100,17 @@ let countdownArray = [
 // nye ball drop event
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
 
+
 })
 
 // nye ball drop functions
 function callBallDrop () {
 
+
 }
 
 function callFireworks () {
+
 
 }
 ```
