@@ -148,7 +148,7 @@ The New Year's Eve Ball Drop usually happens as peopple count down from 10. Let'
 - :function: Find the ``||function: function callBallDrop||`` code under the **// nye ball drop functions** comment. Use the **Enter** key to add an indented line inside the curly brackets **{ }** of the function.
 - :repeat: Open ``||loops:Loops||`` and drag out the ``||loops:for||`` code block onto the indented line inside the **function definition**.
 - :repeat: We want the loop to run a total of 10 times, so replace the number 5 with a **10**.
-- :paper plane: Indented inside the **loop**, type the NYE ball sprite name, a dot operator ``||.||`` and a ``||sprites:y||``. Then type ``||+=||`` to add an **addition assignment operator** that will add and store a value to the y-position of the sprite each time the loop runs.
+- :paper plane: Indented inside the curly brackets **{}** of the **loop**, type the NYE ball sprite name, a dot operator ``||.||`` and a ``||sprites:y||``. Then type ``||+=||`` to add an **addition assignment operator** that will add and store a value to the y-position of the sprite each time the loop runs.
 - :tree: Since we know we want the ball to drop the height of the screen divided by 10, type ``||scene:scene.screenHeight()||`` followed by a ``||math:/||`` and the number **10**.
 
 ![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
