@@ -141,7 +141,7 @@ Learn how to add a sprite and set its position in MakeCode Arcade's JavaScript e
 
 ---
 
-- :paper plane: Use the **Enter** key to create a line under the **// nye ball drop code** code comment. Open ``||sprites:Sprites||`` and drag out the ``||sprites:sprite (img) of kind (kind)||`` code block into the blank line.
+- :paper plane: Use the **Enter** key to create a line under the **// nye ball drop code** code comment. Open ``||sprites:Sprites||`` and drag out the ``||sprites:sprite (img) of kind (kind)||`` code block onto the blank line.
 - :paper plane: Replace **mySprite** with a **variable** name for the sprite, such as ``||sprites:nyeBall||``.
 - :image: Click the palette icon to the left of the line number, then select the **NYE Ball image** from the **Gallery** as the sprite image.
 - :paper plane: Underneath, type the sprite name followed by a **dot operator** ``||sprites:.||`` then select ``||sprites:setPosition||`` from the **code completion** tool.
@@ -165,7 +165,7 @@ The New Year's Eve Ball Drop usually happens as people count down from 10. Let's
 - :function: Find the ``||function: function callBallDrop||`` code under the **// nye ball drop functions** comment. Use the **Enter** key to add an indented line inside the curly brackets **{ }** of the function.
 - :repeat: Open ``||loops:Loops||`` and drag out the ``||loops:for||`` code block onto the indented line inside the **function definition**.
 - :repeat: We want the loop to run a total of 10 times, so replace the number 5 with a **10**.
-- :paper plane: Indented inside the curly brackets **{}** of the **loop**, type the NYE ball sprite name, a dot operator ``||sprites:.||`` and a ``||sprites:y||``. Then type ``||variables:+=||`` to add an **addition assignment operator** that will increase the sprite's y-position each time the loop runs.
+- :paper plane: Indented inside the curly brackets **{ }** of the **loop**, type the NYE ball sprite name, a dot operator ``||sprites:.||`` and a ``||sprites:y||``. Then type ``||variables:+=||`` to add an **addition assignment operator** that will increase the sprite's y-position each time the loop runs.
 - :tree: Since we know we want the ball to drop the height of the screen divided by 10, type ``||scene:scene.screenHeight()||`` followed by ``||math:/||`` and the number **10**.
 
 ![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
@@ -294,10 +294,10 @@ Add animation to enhance the fireworks display!
 ---
 
 - :refresh: Open ``||animation:Animation||`` to add 2 ``||animation:animate (mySprite) frames (frames)||`` code blocks into the ``||function:callFireworks||`` **function definition** to animate the firework sprites.
-- :refresh: Replace ``||null||`` with the name of a firework sprite. 
-- :refresh: Replace ``||[]||`` with **assets.animation**, two backticks ``||`||`` and the name of the matching firework animation: **fireworkAnimOrange** or **fireworkAnimGreen** to access the animation asset stored in the project file.
+- :refresh: Replace ``||animation:null||`` with the name of a firework sprite. 
+- :refresh: Replace ``||animation:[]||`` with **assets.animation**, two backticks ``||`||`` and the name of the matching firework animation: **fireworkAnimOrange** or **fireworkAnimGreen** to access the animation asset stored in the project file.
 - :refresh: Adjust the **frameInterval** parameter to determine the speed of the firework animation. 
-- :refresh: Change the **loop** parameter to True if you want the firework animation to continue running.
+- :refresh: Change the **loop** parameter to **True** if you want the firework animation to continue running.
 - :play: Click the Play button to test the animation code, then adjust the animation parameters to change the firework animation.
 
 ![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
@@ -315,23 +315,23 @@ function callFireworks () {
 
 ## Avoid an error if the A button is pressed more than once!
 
-If the A button is pressed more than once, an error will occur because there are no more images left in the array for the code to run again. To prevent this error, add this code!
+If the A button is pressed more than once, an error will occur because there are no more images left in the array for the code to run again. To prevent this error, add this code:
 
 ---
 
 - :list: Under the existing code underneath the **// nye ball drop code** comment, declare a new variable with the keyword ``||variables:let||`` and the name **isBallDropStarted**.
-- :list: Use an **assignment operator** ``||variables:=||`` to set the variable to **false**.
+- :list: Use an **assignment operator** ``||variables:=||`` to set the variable to **False**.
 - :shuffle: Inside the ``||controller:controller.A.onEvent||`` add a blank line above the code inside. Type ``||logic:if()||`` to add a **conditional** that will check the status of the **isBallDropStarted** variable.
 - :shuffle: Inside the parentheses of the ``||logic:if||`` type ``||logic:!isBallDropStarted||`` to check if the variable is *not true*. 
-- :shuffle: Type an open curly brace ``||logic:{||`` after the parentheses. With your cursor inside the curly brackets **{}** use the **Enter** key to add an indented line below, moving the closed curly brace to the line below that.
-- :list: On the new line, type **isBallDropStarted = true**. Below, copy/paste ``||function:callBallDrop()||`` and ``||function:callFireworks()||`` inside the curly brackets.
+- :shuffle: Type an open curly brace ``||logic:{||`` after the parentheses. With your cursor inside the curly brackets **{ }** use the **Enter** key to add an indented line below, moving the closed curly brace to the line below that.
+- :list: On the new line, type **isBallDropStarted = true**. Below, copy then paste ``||function:callBallDrop()||`` and ``||function:callFireworks()||`` inside the curly brackets.
 - :play: Click the Play button to test that pressing the A key more than once does not create an error in your program.
 
 ![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
 
 ```typescript
 // nye ball drop code
-let nyeBall = sprites.create(nyeImg.ballImageSmall, SpriteKind.Player)
+let nyeBall = sprites.create(img``, SpriteKind.Player)
 nyeBall.setPosition(80,0)
 let isBallDropStarted = false
 
@@ -379,7 +379,7 @@ let countdownArray = [
 ]
 
 // nye ball drop code
-let nyeBall = sprites.create(nyeImg.ballImageSmall, SpriteKind.Player)
+let nyeBall = sprites.create(img``, SpriteKind.Player)
 nyeBall.setPosition(80,0)
 let isBallDropStarted = false
 
@@ -388,7 +388,7 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     if (!isBallDropStarted) {
         isBallDropStarted = true
         callBallDrop()
-        scene.setBackgroundImage(nyeImg.backgroundImage2024)
+        scene.setBackgroundImage(img``)
         music.play(music.createSong(assets.song`nyeSong`), music.PlaybackMode.InBackground)
         callFireworks()
     }
@@ -409,8 +409,8 @@ function callBallDrop () {
 }
 
 function callFireworks () {
-    let fireworks1 = sprites.create(nyeImg.fireworkImageOrange, SpriteKind.Player)
-    let fireworks2 = sprites.create(nyeImg.fireworkImageGreen, SpriteKind.Player)
+    let fireworks1 = sprites.create(img``, SpriteKind.Player)
+    let fireworks2 = sprites.create(img``, SpriteKind.Player)
     fireworks1.setPosition(43, 57)
     fireworks2.setPosition(117, 73)
     animation.runImageAnimation(fireworks1, assets.animation`fireworkAnimOrange`, 100, true)
