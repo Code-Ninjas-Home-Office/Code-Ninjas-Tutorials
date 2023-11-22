@@ -11,8 +11,7 @@
         "README.md",
         "assets.json",
         "nye.md",
-        "santa.md",
-        "bug-collector.md"
+        "santa.md"
     ],
     "testFiles": [
         "test.ts"
