@@ -187,7 +187,7 @@ Hopper collect as many bugs as possible before time runs out!
 
 ![Project Example](https://github.com/sbannonCN/bug-collector/blob/master/bugColEx.gif?raw=true "Here is a project example!")
 
-![Code Ninjas](https://github.com/sbannonCN/bug-collector/blob/master/CN%20logo-.jpg?raw=true "Code Ninjas")
+![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
 
 ## Who is Grace Hopper?
 
@@ -202,10 +202,10 @@ We now use the term **debugging** to mean fixing problems in code.
 
 ---
 
-*Click the ``||scene.Next||`` button to get started.*
+*Click the ``||Next||`` button to get started.*
 
 
-![Code Ninjas](https://github.com/sbannonCN/bug-collector/blob/master/CN%20logo-.jpg?raw=true "Code Ninjas")
+![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
 
 
 ## Welcome
@@ -214,16 +214,13 @@ We now use the term **debugging** to mean fixing problems in code.
 
 ---
 
-Click the **Game Window** tab above.
+Look at the **Game Window** on the right of your screen to explore the project so far!
 
-![Game Window tab](https://github.com/sbannonCN/balloon-pop/blob/master/gameWindow.PNG?raw=true "Don't forget to look at your game!")
+![Game Window](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/GameWindow.png?raw=true "Game Window") 
 
 ---
 
-Use this tab whenever you need to click ``||scene.▶||`` to preview the project!
-
-
-![Code Ninjas](https://github.com/sbannonCN/bug-collector/blob/master/CN%20logo-.jpg?raw=true "Code Ninjas")
+![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
 
 
 ```blocks
@@ -378,19 +375,19 @@ Click on the **Game Window** to see these blocks in action on the game screen!
 
 ---
 
-- :game controller: Open **Controller** and drag ``||controller.move (mySprite)||`` 
-into *the end* of the ``||loops.on start||`` container. 
+- :game controller: Open ``||controller:Controller||`` and drag ``||controller:move (mySprite)||`` 
+into *the end* of the ``||loops:on start||`` container. 
 
 
-- :paper plane: Open **Sprites** and drag ``||sprites.set (mySprite) stay in screen||`` 
-into *the end* of ``||loops.on start||``.
+- :paper plane: Open ``||sprites:Sprites||`` and drag ``||sprites:set (mySprite) stay in screen||`` 
+into *the end* of ``||loops:on start||``.
 
 ---
 
-*Click ``||scene.▶||`` and use the directional buttons to move Grace Hopper.*
+Click ``||▶||`` and use the directional buttons to move Grace Hopper.
 
 
-![Code Ninjas](https://github.com/sbannonCN/bug-collector/blob/master/CN%20logo-.jpg?raw=true "Code Ninjas")
+![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
 
 
 ### @diffs true
@@ -547,19 +544,19 @@ mySprite.setStayInScreen(true)
 
 ---
 
-- :circle: Open **Game** and drag ``||game.on game update every||`` 
-onto an empty spot in the editor.
+- :circle: Open ``||game:Game||`` and drag ``||game:on game update every||`` 
+onto an empty spot in the code editor.
 
 
-- :paper plane: Open **Sprites** and drag ``||variables.set [projectile] to||`` 
-into ``||game.on game update every||``.
+- :paper plane: Open ``||sprites:Sprites||`` and drag ``||variables:set [projectile] to||`` 
+into ``||game:on game update every||``.
 
 ---
 
 *Click the 💡 below to see if you're on the right track!*
 
 
-![Code Ninjas](https://github.com/sbannonCN/bug-collector/blob/master/CN%20logo-.jpg?raw=true "Code Ninjas")
+![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
 
 
 ```blocks
@@ -734,18 +731,18 @@ game.onUpdateInterval(500, function () {
 
 ---
 
-- :mouse pointer: In the editor, click on ``||variables.[projectile]||`` and select 
-``||variables.Rename Variable...||``.  Type **moth** and click ``||loops.Ok||``.
+- :mouse pointer: In the editor, click on ``||variables:[projectile]||`` and select 
+``||variables:Rename Variable...||``.  Type **moth** and click ``||loops:Ok||``.
 
-- :mouse pointer: Click the **grey oval** and go to the ``||sprites.My Assets||`` tab at the top. 
-Select the **moth** and click ``||loops.Done||``.
+- :mouse pointer: Click the **grey square** and go to the ``||sprites:My Assets||`` tab at the top. 
+Select the **moth** and click ``||loops:Done||``.
 
 ---
 
-*Click ``||scene.▶||`` to see a moth move across the screen every 500 ms.*
+Click ``||▶||`` to see a moth move across the screen every 500 ms.
 
 
-![Code Ninjas](https://github.com/sbannonCN/bug-collector/blob/master/CN%20logo-.jpg?raw=true "Code Ninjas")
+![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
 
 
 ```blocks
@@ -919,17 +916,16 @@ game.onUpdateInterval(500, function () {
 
 ---
 
-- :calculator: Open **Math** and drag ``||math.pick random||`` 
-into both the ``||sprites.vx||`` **and** ``||sprites.vy||`` bubbles. 
+- :calculator: Open ``||math:Math||`` and drag ``||math:pick random||`` into both the ``||sprites:vx||`` **and** ``||sprites:vy||`` bubbles. 
 
-- :mouse pointer: Set both to pick random from **-50** to **50**. 
+- :mouse pointer: Set both to pick randomly from **-50** to **50**. 
 
 ---
 
-*Click ``||scene.▶||`` to see moths all over the screen.*
+Click ``||▶||`` to see moths all over the screen.
 
 
-![Code Ninjas](https://github.com/sbannonCN/bug-collector/blob/master/CN%20logo-.jpg?raw=true "Code Ninjas")
+![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
 
 ```blocks
 let moth: Sprite = null
@@ -1102,8 +1098,7 @@ game.onUpdateInterval(500, function () {
 
 ---
 
-In ``||game.on game update||``, 500 is the interval value that sets how often 
-a bug appears.  
+In ``||game:on game update||``, 500 is the interval value that sets how often a bug appears.  
 
 ``|Test this out!|``
 
@@ -1114,7 +1109,7 @@ a bug appears.
 😎 *Iterating- or making changes- is an important part of coding!* 😎
 
 
-![Code Ninjas](https://github.com/sbannonCN/bug-collector/blob/master/CN%20logo-.jpg?raw=true "Code Ninjas")
+![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
 
 
 ## 
@@ -1123,233 +1118,36 @@ a bug appears.
 
 ---
 
-Grace Hopper was one of the first computer programmers to work on the Harvard Mark 
-I computer
+Grace Hopper was one of the first computer programmers to work on the Harvard Mark I computer
 
 ![computer](https://github.com/sbannonCN/bug-collector/blob/master/computer.PNG?raw=true "the Harvard Mark I computer")
 
-*The Harvard Mark I is one of the world's first programmable computers.*
+The Harvard Mark I is one of the world's first programmable computers.
 
 
-![Code Ninjas](https://github.com/sbannonCN/bug-collector/blob/master/CN%20logo-.jpg?raw=true "Code Ninjas")
+![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
 
 ## Step 5
-🦋 **Set Sprite Kind** 🦋  
-
-*Set the moth's sprite kind to Bug.*
-
----
-
-- :paper plane: Open **Sprites** and drag ``||sprites.set (mySprite) kind||`` 
-into *the end* of ``||game.on game update||``. 
-
-- :mouse pointer: Click on ``||variables.mySprite||`` and select **moth** from the drop-down.
-
-- :mouse pointer: Click on ``||sprites.Player||`` and 
-select ``||sprites.Add a new kind...||``. Type **Bug** and click ``||loops.Ok||``.
-
----
-
-*Did you change the correct parameters? Check 💡!*
-
-
-![Code Ninjas](https://github.com/sbannonCN/bug-collector/blob/master/CN%20logo-.jpg?raw=true "Code Ninjas")
-
-
-```blocks
-namespace SpriteKind {
-    export const Bug = SpriteKind.create()
-}
-let moth: Sprite = null
-scene.setBackgroundImage(img`
-    bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
-    bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
-    dddddddddddddddddddddddddddddddddddddfbbdddddddddddddddddddddddddddddddddddddddfbbdddddddddddddddddddddddddddddddddddddddfbbdddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddfbbdddddddddddddddddddddddddddddddddddddddfbbdddddddddddddddddddddddddddddddddddddddfbbdddddddddddddddddddddddddddddddddddd
-    dccccccccccccccccccccccccccccccccccddfbbddccccccccccccccccccccccccccccccccccdddfbbddccccccccccccccccccccccccccccccccccdddfbbdcccccccccccccccccccccccccccccccccdd
-    dccddddddddddddddddddccccccccccccccddfbbddccddddddddddddddddddccccccccccccccdddfbbddccddddddddddddddddddccccccccccccccdddfbbdccddddddddddddddddddcccccccccccccdd
-    dccdbbbbbbbbbbbbbbbbdcc22cc22cc22ccddfbbddccdbbbbbbbbbbbbbbbbdcc22cc22cc22ccdddfbbddccdbbbbbbbbbbbbbbbbdcc22cc22cc22ccdddfbbdccdbbbbbbbbbbbbbbbbdcc22cc22cc22cdd
-    dccdbbbbbbbbbbbbbbbbdcc22cc22cc22ccddfbbddccdbbbbbbbbbbbbbbbbdcc22cc22cc22ccdddfbbddccdbbbbbbbbbbbbbbbbdcc22cc22cc22ccdddfbbdccdbbbbbbbbbbbbbbbbdcc22cc22cc22cdd
-    dccdbbbbbbbbbbbbbbbbdcc22cc22cc22ccddfbbddccdbbbbbbbbbbbbbbbbdcc22cc22cc22ccdddfbbddccdbbbbbbbbbbbbbbbbdcc22cc22cc22ccdddfbbdccdbbbbbbbbbbbbbbbbdcc22cc22cc22cdd
-    dccdbbbbbbbbbbbbbbbbdccccccccccccccddfbbddccdbbbbbbbbbbbbbbbbdccccccccccccccdddfbbddccdbbbbbbbbbbbbbbbbdccccccccccccccdddfbbdccdbbbbbbbbbbbbbbbbdcccccccccccccdd
-    dccdbbbbbbbbbbbbbbbbdcc22cc22cc22ccddfbbddccdbbbbbbbbbbbbbbbbdcc22cc22cc22ccdddfbbddccdbbbbbbbbbbbbbbbbdcc22cc22cc22ccdddfbbdccdbbbbbbbbbbbbbbbbdcc22cc22cc22cdd
-    dccdbbbbb2bbbbbbbbbbdcc22cc22cc22ccddfbbddccdbbbbb2bbbbbbbbbbdcc22cc22cc22ccdddfbbddccdbbbbb2bbbbbbbbbbdcc22cc22cc22ccdddfbbdccdbbbbb2bbbbbbbbbbdcc22cc22cc22cdd
-    dccdbbbbbb2ffbbbbbbbdcc22cc22cc22ccddfbbddccdbbbbbb2ffbbbbbbbdcc22cc22cc22ccdddfbbddccdbbbbbb2ffbbbbbbbdcc22cc22cc22ccdddfbbdccdbbbbbb2ffbbbbbbbdcc22cc22cc22cdd
-    dccdbbbbbff2fffbbbbbdccccccccccccccddfbbddccdbbbbbff2fffbbbbbdccccccccccccccdddfbbddccdbbbbbff2fffbbbbbdccccccccccccccdddfbbdccdbbbbbff2fffbbbbbdcccccccccccccdd
-    dccdbbbbfff2efffbbbbdccccccccccccccddfbbddccdbbbbfff2efffbbbbdccccccccccccccdddfbbddccdbbbbfff2efffbbbbdccccccccccccccdddfbbdccdbbbbfff2efffbbbbdcccccccccccccdd
-    dccdbbbffffffffffbbbdccccccc1c1c1ccddfbbddccdbbbffffffffffbbbdccccccc1c1c1ccdddfbbddccdbbbffffffffffbbbdccccccc1c1c1ccdddfbbdccdbbbffffffffffbbbdccccccc1c1c1cdd
-    dccdbbfffffffffffbbbdccccccc1c1c1ccddfbbddccdbbfffffffffffbbbdccccccc1c1c1ccdddfbbddccdbbfffffffffffbbbdccccccc1c1c1ccdddfbbdccdbbfffffffffffbbbdccccccc1c1c1cdd
-    dccdbbffffffffffffbbdccccccc1c1c1ccddfbbddccdbbffffffffffffbbdccccccc1c1c1ccdddfbbddccdbbffffffffffffbbdccccccc1c1c1ccdddfbbdccdbbffffffffffffbbdccccccc1c1c1cdd
-    dccddddddddddddddddddccccccccccccccddfbbddccddddddddddddddddddccccccccccccccdddfbbddccddddddddddddddddddccccccccccccccdddfbbdccddddddddddddddddddcccccccccccccdd
-    dccccccccccccccccccccccccccccccccccddfbbddccccccccccccccccccccccccccccccccccdddfbbddccccccccccccccccccccccccccccccccccdddfbbdcccccccccccccccccccccccccccccccccdd
-    dddddddddddddddddddddddddddddddddddddfbbdddddddddddddddddddddddddddddddddddddddfbbdddddddddddddddddddddddddddddddddddddddfbbdddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddfbbdddddddddddddddddddddddddddddddddddddddfbbdddddddddddddddddddddddddddddddddddddddfbbdddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddfbbdddddddddddddddddddddddddddddddddddddddfbbdddddddddddddddddddddddddddddddddddddddfbbdddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddfbbdddddddddddddddddddddddddddddddddddddddfbbdddddddddddddddddddddddddddddddddddddddfbbdddddddddddddddddddddddddddddddddddd
-    ddddddcccccdddddddddddddcccccddddddddfbbdddddddcccccdddddddddddddcccccdddddddddfbbdddddddcccccdddddddddddddcccccdddddddddfbbddddddcccccdddddddddddddcccccddddddd
-    ddddcccccccccdddddddddcccccccccddddddfbbdddddcccccccccdddddddddcccccccccdddddddfbbdddddcccccccccdddddddddcccccccccdddddddfbbddddcccccccccdddddddddcccccccccddddd
-    dddcccccccccccdddddddcccccccccccdddddfbbddddcccccccccccdddddddcccccccccccddddddfbbddddcccccccccccdddddddcccccccccccddddddfbbdddcccccccccccdddddddcccccccccccdddd
-    ddccccbcccdccccdddddccccbcccdccccddddfbbdddccccbcccdccccdddddccccbcccdccccdddddfbbdddccccbcccdccccdddddccccbcccdccccdddddfbbddccccbcccdccccdddddccccbcccdccccddd
-    ddcccbdcccddcccdddddcccbdcccddcccddddfbbdddcccbdcccddcccdddddcccbdcccddcccdddddfbbdddcccbdcccddcccdddddcccbdcccddcccdddddfbbddcccbdcccddcccdddddcccbdcccddcccddd
-    dcccbddcccdddcccdddcccbddcccdddcccdddfbbddcccbddcccdddcccdddcccbddcccdddcccddddfbbddcccbddcccdddcccdddcccbddcccdddcccddddfbbdcccbddcccdddcccdddcccbddcccdddcccdd
-    dcccbddcccdddcccdddcccbddcccdddcccdddfbbddcccbddcccdddcccdddcccbddcccdddcccddddfbbddcccbddcccdddcccdddcccbddcccdddcccddddfbbdcccbddcccdddcccdddcccbddcccdddcccdd
-    dcccbdccbccddcccdddcccbdccbccddcccdddfbbddcccbdccbccddcccdddcccbdccbccddcccddddfbbddcccbdccbccddcccdddcccbdccbccddcccddddfbbdcccbdccbccddcccdddcccbdccbccddcccdd
-    dcccbdccbcccccccdddcccbdccbcccccccdddfbbddcccbdccbcccccccdddcccbdccbcccccccddddfbbddcccbdccbcccccccdddcccbdccbcccccccddddfbbdcccbdccbcccccccdddcccbdccbcccccccdd
-    dcccccccccdcccccdddcccccccccdcccccdddfbbddcccccccccdcccccdddcccccccccdcccccddddfbbddcccccccccdcccccdddcccccccccdcccccddddfbbdcccccccccdcccccdddcccccccccdcccccdd
-    ddcccccddddccccdddddcccccddddccccddddfbbdddcccccddddccccdddddcccccddddccccdddddfbbdddcccccddddccccdddddcccccddddccccdddddfbbddcccccddddccccdddddcccccddddccccddd
-    ddccccbbbbbccccdddddccccbbbbbccccddddfbbdddccccbbbbbccccdddddccccbbbbbccccdddddfbbdddccccbbbbbccccdddddccccbbbbbccccdddddfbbddccccbbbbbccccdddddccccbbbbbccccddd
-    dddcccccccccccdddddddcccccccccccdddddfbbddddcccccccccccdddddddcccccccccccddddddfbbddddcccccccccccdddddddcccccccccccddddddfbbdddcccccccccccdddddddcccccccccccdddd
-    ddddcccccccccdddddddddcccccccccddddddfbbdddddcccccccccdddddddddcccccccccdddddddfbbdddddcccccccccdddddddddcccccccccdddddddfbbddddcccccccccdddddddddcccccccccddddd
-    ddddddcccccccddddddddccccccccddddddddfbbdddddddcccccccddddddddccccccccdddddddddfbbdddddddcccccccddddddddccccccccdddddddddfbbddddddcccccccddddddddccccccccddddddd
-    dddddddddddccccccccccccddddddddddddddfbbddddddddddddccccccccccccdddddddddddddddfbbddddddddddddccccccccccccdddddddddddddddfbbdddddddddddccccccccccccddddddddddddd
-    dddddddddddddcccccccccdddddddddddddddfbbddddddddddddddcccccccccddddddddddddddddfbbddddddddddddddcccccccccddddddddddddddddfbbdddddddddddddcccccccccdddddddddddddd
-    dddddddddddddddddddddddddddddddddddddfbbdddddddddddddddddddddddddddddddddddddddfbbdddddddddddddddddddddddddddddddddddddddfbbdddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddfbbdddddddddddddddddddddddddddddddddddddddfbbdddddddddddddddddddddddddddddddddddddddfbbdddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddfbbdddddddddddddddddddddddddddddddddddddddfbbdddddddddddddddddddddddddddddddddddddddfbbdddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddfbbdddddddddddddddddddddddddddddddddddddddfbbdddddddddddddddddddddddddddddddddddddddfbbdddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddfbbdddddddddddddddddddddddddddddddddddddddfbbdddddddddddddddddddddddddddddddddddddddfbbdddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddfbbdddddddddddddddddddddddddddddddddddddddfbbdddddddddddddddddddddddddddddddddddddddfbbdddddddddddddddddddddddddddddddddddd
-    dccccccccccccccccccccccccccccccccddddfbbddccccccccccccccccccccccccccccccccdddddfbbddccccccccccccccccccccccccccccccccdddddfbbdccccccccccccccccccccccccccccccccddd
-    dccccccccccccccccccccccccccccccccddddfbbddccccccccccccccccccccccccccccccccdddddfbbddccccccccccccccccccccccccccccccccdddddfbbdccccccccccccccccccccccccccccccccddd
-    dc11cc99cc11cc11cc99ccddcc11cc11cddddfbbddc11cc99cc11cc11cc11ccddcc11cc11cdddddfbbddc11cc11cc11cc11cc11ccddcc11cc99cdddddfbbdc11cc99cc11cc11cc11ccddcc11cc99cddd
-    dc11cc99cc11cc11cc99ccddcc11cc11cddddfbbddc11cc99cc11cc11cc11ccddcc11cc11cdddddfbbddc11cc11cc11cc11cc11ccddcc11cc99cdddddfbbdc11cc99cc11cc11cc11ccddcc11cc99cddd
-    dccccccccccccccccccccccccccccccccddddfbbddccccccccccccccccccccccccccccccccdddddfbbddccccccccccccccccccccccccccccccccdddddfbbdccccccccccccccccccccccccccccccccddd
-    dc11ccddcc11cc11cc11cc99cc11cc11cddddfbbddc11ccddcc99cc11cc11cc99cc11cc11cdddddfbbddc11ccddcc99cc11cc11cc99cc11cc11cdddddfbbdc11ccddcc11cc11cc11cc99cc11cc11cddd
-    dc11ccddcc11cc11cc11cc99cc11cc11cddddfbbddc11ccddcc99cc11cc11cc99cc11cc11cdddddfbbddc11ccddcc99cc11cc11cc99cc11cc11cdddddfbbdc11ccddcc11cc11cc11cc99cc11cc11cddd
-    dccccccccccccccccccccccccccccccccddddfbbddccccccccccccccccccccccccccccccccdddddfbbddccccccccccccccccccccccccccccccccdddddfbbdccccccccccccccccccccccccccccccccddd
-    dc11cc99cc11cc99cc11cc11ccddcc11cddddfbbddc11cc11cc11cc11cc11cc11ccddcc99cdddddfbbddc11cc99cc11cc11cc11cc11ccddcc11cdddddfbbdc11cc11cc11cc99cc11cc11ccddcc11cddd
-    dc11cc99cc11cc99cc11cc11ccddcc11cddddfbbddc11cc11cc11cc11cc11cc11ccddcc99cdddddfbbddc11cc99cc11cc11cc11cc11ccddcc11cdddddfbbdc11cc11cc11cc99cc11cc11ccddcc11cddd
-    dccccccccccccccccccccccccccccccccddddfbbddccccccccccccccccccccccccccccccccdddddfbbddccccccccccccccccccccccccccccccccdddddfbbdccccccccccccccccccccccccccccccccddd
-    dccccccccccccccccccccccccccccccccddddfbbddccccccccccccccccccccccccccccccccdddddfbbddccccccccccccccccccccccccccccccccdddddfbbdccccccccccccccccccccccccccccccccddd
-    dddddddddddddddddddddddddddddddddddddfbbdddddddddddddddddddddddddddddddddddddddfbbdddddddddddddddddddddddddddddddddddddddfbbdddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddfbbdddddddddddddddddddddddddddddddddddddddfbbdddddddddddddddddddddddddddddddddddddddfbbdddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddfbbdddddddddddddddddddddddddddddddddddddddfbbdddddddddddddddddddddddddddddddddddddddfbbdddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddfbbdddddddddddddddddddddddddddddddddddddddfbbdddddddddddddddddddddddddddddddddddddddfbbdddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddfbbdddddddddddddddddddddddddddddddddddddddfbbdddddddddddddddddddddddddddddddddddddddfbbdddddddddddddddddddddddddddddddddddd
-    dccccccccccccccccccccccccccccccccddddfbbddccccccccccccccccccccccccccccccccdddddfbbddccccccccccccccccccccccccccccccccdddddfbbdccccccccccccccccccccccccccccccccddd
-    dccccccccccccccccccccccccccccccccddddfbbddccccccccccccccccccccccccccccccccdddddfbbddccccccccccccccccccccccccccccccccdddddfbbdccccccccccccccccccccccccccccccccddd
-    dccccccccccccccccccccccccccccccccddddfbbddccccccccccccccccccccccccccccccccdddddfbbddccccccccccccccccccccccccccccccccdddddfbbdccccccccccccccccccccccccccccccccddd
-    dcccc66ccccc11ccccc66ccccc11cccccddddfbbddccccbbccccc11cccccbbccccc11cccccdddddfbbddccccbbccccc11cccccbbccccc11cccccdddddfbbdccccbbccccc11cccccbbccccc11cccccddd
-    dcccc66ccccc11ccccc66ccccc11cccccddddfbbddccccbbccccc11cccccbbccccc11cccccdddddfbbddccccbbccccc11cccccbbccccc11cccccdddddfbbdccccbbccccc11cccccbbccccc11cccccddd
-    dcccc66ccccc11ccccc66ccccc11cccccddddfbbddccccbbccccc11cccccbbccccc11cccccdddddfbbddccccbbccccc11cccccbbccccc11cccccdddddfbbdccccbbccccc11cccccbbccccc11cccccddd
-    dcccc66ccccc11ccccc66ccccc11cccccddddfbbddccccbbccccc11cccccbbccccc11cccccdddddfbbddccccbbccccc11cccccbbccccc11cccccdddddfbbdccccbbccccc11cccccbbccccc11cccccddd
-    dcccc66ccccc11ccccc66ccccc11cccccddddfbbddccccbbccccc11cccccbbccccc11cccccdddddfbbddccccbbccccc11cccccbbccccc11cccccdddddfbbdccccbbccccc11cccccbbccccc11cccccddd
-    dcccc66ccccc11ccccc66ccccc11cccccddddfbbddccccbbccccc11cccccbbccccc11cccccdddddfbbddccccbbccccc11cccccbbccccc11cccccdddddfbbdccccbbccccc11cccccbbccccc11cccccddd
-    dcccc66ccccc11ccccc66ccccc11cccccddddfbbddccccbbccccc11cccccbbccccc11cccccdddddfbbddccccbbccccc11cccccbbccccc11cccccdddddfbbdccccbbccccc11cccccbbccccc11cccccddd
-    dcccc66ccccc11ccccc66ccccc11cccccddddfbbddccccbbccccc11cccccbbccccc11cccccdddddfbbddccccbbccccc11cccccbbccccc11cccccdddddfbbdccccbbccccc11cccccbbccccc11cccccddd
-    dccccccccccccccccccccccccccccccccddddfbbddccccccccccccccccccccccccccccccccdddddfbbddccccccccccccccccccccccccccccccccdddddfbbdccccccccccccccccccccccccccccccccddd
-    dccccccccccccccccccccccccccccccccddddfbbddccccccccccccccccccccccccccccccccdddddfbbddccccccccccccccccccccccccccccccccdddddfbbdccccccccccccccccccccccccccccccccddd
-    dccccccccccccccccccccccccccccccccddddfbbddccccccccccccccccccccccccccccccccdddddfbbddccccccccccccccccccccccccccccccccdddddfbbdccccccccccccccccccccccccccccccccddd
-    dccccccccccccccccccccccccccccccccddddfbbddccccccccccccccccccccccccccccccccdddddfbbddccccccccccccccccccccccccccccccccdddddfbbdccccccccccccccccccccccccccccccccddd
-    dccccccccccccccccccccccccccccccccddddfbbddccccccccccccccccccccccccccccccccdddddfbbddccccccccccccccccccccccccccccccccdddddfbbdccccccccccccccccccccccccccccccccddd
-    dcccc11ccccc66ccccc11ccccc11cccccddddfbbddcccc11cccccbbccccc11ccccc11cccccdddddfbbddcccc11cccccbbccccc11ccccc11cccccdddddfbbdcccc11cccccbbccccc11ccccc11cccccddd
-    dcccc11ccccc66ccccc11ccccc11cccccddddfbbddcccc11cccccbbccccc11ccccc11cccccdddddfbbddcccc11cccccbbccccc11ccccc11cccccdddddfbbdcccc11cccccbbccccc11ccccc11cccccddd
-    dcccc11ccccc66ccccc11ccccc11cccccddddfbbddcccc11cccccbbccccc11ccccc11cccccdddddfbbddcccc11cccccbbccccc11ccccc11cccccdddddfbbdcccc11cccccbbccccc11ccccc11cccccddd
-    dcccc11ccccc66ccccc11ccccc11cccccddddfbbddcccc11cccccbbccccc11ccccc11cccccdddddfbbddcccc11cccccbbccccc11ccccc11cccccdddddfbbdcccc11cccccbbccccc11ccccc11cccccddd
-    dcccc11ccccc66ccccc11ccccc11cccccddddfbbddcccc11cccccbbccccc11ccccc11cccccdddddfbbddcccc11cccccbbccccc11ccccc11cccccdddddfbbdcccc11cccccbbccccc11ccccc11cccccddd
-    dcccc11ccccc66ccccc11ccccc11cccccddddfbbddcccc11cccccbbccccc11ccccc11cccccdddddfbbddcccc11cccccbbccccc11ccccc11cccccdddddfbbdcccc11cccccbbccccc11ccccc11cccccddd
-    dcccc11ccccc66ccccc11ccccc11cccccddddfbbddcccc11cccccbbccccc11ccccc11cccccdddddfbbddcccc11cccccbbccccc11ccccc11cccccdddddfbbdcccc11cccccbbccccc11ccccc11cccccddd
-    dcccc11ccccc66ccccc11ccccc11cccccddddfbbddcccc11cccccbbccccc11ccccc11cccccdddddfbbddcccc11cccccbbccccc11ccccc11cccccdddddfbbdcccc11cccccbbccccc11ccccc11cccccddd
-    dccccccccccccccccccccccccccccccccddddfbbddccccccccccccccccccccccccccccccccdddddfbbddccccccccccccccccccccccccccccccccdddddfbbdccccccccccccccccccccccccccccccccddd
-    dccccccccccccccccccccccccccccccccddddfbbddccccccccccccccccccccccccccccccccdddddfbbddccccccccccccccccccccccccccccccccdddddfbbdccccccccccccccccccccccccccccccccddd
-    dccccccccccccccccccccccccccccccccddddfbbddccccccccccccccccccccccccccccccccdddddfbbddccccccccccccccccccccccccccccccccdddddfbbdccccccccccccccccccccccccccccccccddd
-    dccccccccccccccccccccccccccccccccddddfbbddccccccccccccccccccccccccccccccccdddddfbbddccccccccccccccccccccccccccccccccdddddfbbdccccccccccccccccccccccccccccccccddd
-    dcccc11ccccc99ccccc11ccccc66cccccddddfbbddcccc11ccccc99ccccc11cccccbbcccccdddddfbbddcccc11ccccc11ccccc99cccccbbcccccdddddfbbdcccc11ccccc99ccccc11cccccbbcccccddd
-    dcccc11ccccc99ccccc11ccccc66cccccddddfbbddcccc11ccccc99ccccc11cccccbbcccccdddddfbbddcccc11ccccc11ccccc99cccccbbcccccdddddfbbdcccc11ccccc99ccccc11cccccbbcccccddd
-    dcccc11ccccc99ccccc11ccccc66cccccddddfbbddcccc11ccccc99ccccc11cccccbbcccccdddddfbbddcccc11ccccc11ccccc99cccccbbcccccdddddfbbdcccc11ccccc99ccccc11cccccbbcccccddd
-    dcccc11ccccc99ccccc11ccccc66cccccddddfbbddcccc11ccccc99ccccc11cccccbbcccccdddddfbbddcccc11ccccc11ccccc99cccccbbcccccdddddfbbdcccc11ccccc99ccccc11cccccbbcccccddd
-    dcccc11ccccc99ccccc11ccccc66cccccddddfbbddcccc11ccccc99ccccc11cccccbbcccccdddddfbbddcccc11ccccc11ccccc99cccccbbcccccdddddfbbdcccc11ccccc99ccccc11cccccbbcccccddd
-    dcccc11ccccc99ccccc11ccccc66cccccddddfbbddcccc11ccccc99ccccc11cccccbbcccccdddddfbbddcccc11ccccc11ccccc99cccccbbcccccdddddfbbdcccc11ccccc99ccccc11cccccbbcccccddd
-    dcccc11ccccc99ccccc11ccccc66cccccddddfbbddcccc11ccccc99ccccc11cccccbbcccccdddddfbbddcccc11ccccc11ccccc99cccccbbcccccdddddfbbdcccc11ccccc99ccccc11cccccbbcccccddd
-    dcccc11ccccc99ccccc11ccccc66cccccddddfbbddcccc11ccccc99ccccc11cccccbbcccccdddddfbbddcccc11ccccc11ccccc99cccccbbcccccdddddfbbdcccc11ccccc99ccccc11cccccbbcccccddd
-    dccccccccccccccccccccccccccccccccddddfbbddccccccccccccccccccccccccccccccccdddddfbbddccccccccccccccccccccccccccccccccdddddfbbdccccccccccccccccccccccccccccccccddd
-    dccccccccccccccccccccccccccccccccddddfbbddccccccccccccccccccccccccccccccccdddddfbbddccccccccccccccccccccccccccccccccdddddfbbdccccccccccccccccccccccccccccccccddd
-    dccccccccccccccccccccccccccccccccddddfbbddccccccccccccccccccccccccccccccccdddddfbbddccccccccccccccccccccccccccccccccdddddfbbdccccccccccccccccccccccccccccccccddd
-    dddddddddddddddddddddddddddddddddddddfbbdddddddddddddddddddddddddddddddddddddddfbbdddddddddddddddddddddddddddddddddddddddfbbdddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddfbbdddddddddddddddddddddddddddddddddddddddfbbdddddddddddddddddddddddddddddddddddddddfbbdddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddfbbdddddddddddddddddddddddddddddddddddddddfbbdddddddddddddddddddddddddddddddddddddddfbbdddddddddddddddddddddddddddddddddddd
-    ddcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcddddfbbdddcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdddddfbbdddcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdddddfbbddcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcddd
-    ddcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcddddfbbdddcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdddddfbbdddcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdddddfbbddcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcddd
-    ddcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcddddfbbdddcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdddddfbbdddcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdddddfbbddcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcddd
-    ddcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcddddfbbdddcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdddddfbbdddcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdddddfbbddcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcddd
-    ddcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcddddfbbdddcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdddddfbbdddcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdddddfbbddcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcddd
-    ddcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcddddfbbdddcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdddddfbbdddcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdddddfbbddcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcddd
-    ddcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcddddfbbdddcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdddddfbbdddcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdddddfbbddcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcddd
-    ddcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcddddfbbdddcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdddddfbbdddcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdddddfbbddcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcddd
-    ddcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcddddfbbdddcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdddddfbbdddcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdddddfbbddcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcddd
-    ddcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcddddfbbdddcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdddddfbbdddcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdddddfbbddcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcddd
-    dddddddddddddddddddddddddddddddddddddfbbdddddddddddddddddddddddddddddddddddddddfbbdddddddddddddddddddddddddddddddddddddddfbbdddddddddddddddddddddddddddddddddddd
-    ddbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbddddfbbdddbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbdddddfbbdddbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbdddddfbbddbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbddd
-    ddbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbddddfbbdddbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbdddddfbbdddbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbdddddfbbddbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbddd
-    dddddddddddddddddddddddddddddddddddddfbbdddddddddddddddddddddddddddddddddddddddfbbdddddddddddddddddddddddddddddddddddddddfbbdddddddddddddddddddddddddddddddddddd
-    `)
-let mySprite = sprites.create(img`
-    . . . . f b b b b b f . . . 
-    . . . f c 1 1 1 1 1 b f . . 
-    . . f c 1 1 8 5 8 1 1 b f . 
-    . f 5 1 1 1 5 8 5 1 1 5 f . 
-    . f 8 5 5 5 5 5 5 5 5 8 f . 
-    . f 8 8 8 8 8 8 8 8 8 8 f . 
-    . . f c c f f 8 8 f f c c f 
-    f c b b f d 1 f f 1 d c 3 f 
-    c b b d f d f e e f d f b f 
-    c b 8 d e f e d e e f 4 b . 
-    . f 8 8 3 d d d d 3 8 c f . 
-    f 8 8 8 1 4 b b b 1 8 8 f . 
-    f 6 5 c 8 1 1 c 1 1 8 6 5 f 
-    f e d f 8 c 8 8 8 8 8 b d f 
-    . f f c 8 8 8 8 8 c f f f . 
-    . . . . f f f f f f . . . . 
-    . . . f f f . . f f f . . . 
-    `, SpriteKind.Player)
-controller.moveSprite(mySprite)
-mySprite.setStayInScreen(true)
-game.onUpdateInterval(500, function () {
-    moth = sprites.createProjectileFromSide(img`
-        . . . . f . . . . . f . . . . 
-        . . . . . f . . . f . . . . . 
-        . . . . . f . . . f . . . . . 
-        . . . . . . f f f . . . . . . 
-        . . . . f b c b d b f . . . . 
-        . . f f e 1 f c f 1 e f f . . 
-        . f c 6 e e 1 1 1 e d 6 c f . 
-        f e 6 4 4 4 e 6 d 4 4 4 6 e f 
-        f e 4 5 d f 6 9 9 f d 5 4 4 f 
-        f d 5 1 e f 6 6 9 f e 1 5 d f 
-        . f e e f e f 6 c e f e e f . 
-        . . . f d b b f f c d f . . . 
-        . . . . c f . . . f c . . . . 
-        `, randint(-50, 50), randint(-50, 50))
-    moth.setKind(SpriteKind.Bug)
-})
-```
-
-## Step 6
-🗗 **Create Overlap Event** 🗗  
+🗗 **Create an Overlap Event** 🗗  
 
 ---
 
 *Make something happen when Grace touches a bug.*
 
-- :paper plane: Open **Sprites** and drag ``||sprites.on (sprite) of kind [Player] overlaps||`` 
-onto the editor.
+- :paper plane: Open **Sprites** and drag ``||sprites:on (sprite) of kind [Player] overlaps||`` into the editor.
 
-- :mouse pointer: Click on *otherSprite's* kind ``||sprites.Player||`` and 
-select **Bug** from the drop-down menu.
+- :mouse pointer: Click on *otherSprite's* kind and select ``||sprites:Projectile||`` from the drop-down menu.
 
 ---
 
 *Click 💡 to see if you're on the right track!*
 
 
-![Code Ninjas](https://github.com/sbannonCN/bug-collector/blob/master/CN%20logo-.jpg?raw=true "Code Ninjas")
+![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
 
 
 ```blocks
-namespace SpriteKind {
-    export const Bug = SpriteKind.create()
-}
-sprites.onOverlap(SpriteKind.Player, SpriteKind.Bug, function (sprite, otherSprite) {
+sprites.onOverlap(SpriteKind.Player, SpriteKind.Projectile, function (sprite, otherSprite) {
 	
 })
 let moth: Sprite = null
@@ -1512,39 +1310,31 @@ game.onUpdateInterval(500, function () {
         . . . f d b b f f c d f . . . 
         . . . . c f . . . f c . . . . 
         `, randint(-50, 50), randint(-50, 50))
-    moth.setKind(SpriteKind.Bug)
 })
 ```
 
-## Step 7
-🗗 **Create Overlap Event** 🗗 
+## Step 6
+🗗 **Capture the bug!** 🗗 
 
 ---
 
-- :paper plane: Open **Sprites** and drag ``||sprites.destroy (mySprite)||`` 
-into the ``||sprites.overlaps||`` container.
+- :paper plane: Open **Sprites** and drag ``||sprites:destroy (mySprite)||`` into the ``||sprites:overlaps||`` container.
 
-- :mouse pointer: From the ``||sprites.overlaps||`` container, drag the 
-``||variables.(otherSprite)||`` bubble to replace ``||variables.(mySprite)||`` in destroy.
-
-
+- :mouse pointer: From the ``||sprites:overlaps||`` container, drag the ``||variables:(otherSprite)||`` bubble to replace ``||variables:(mySprite)||`` in destroy.
 
 `||BONUS||` Click **⊕** to choose an effect.
 
 ---
 
-*Click ``||scene.▶||`` and overlap with a bug to see it disappear.*
+Click ``||▶||`` and overlap with a bug to see it disappear.
 
 
-![Code Ninjas](https://github.com/sbannonCN/bug-collector/blob/master/CN%20logo-.jpg?raw=true "Code Ninjas")
+![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
 
 
 ```blocks
-namespace SpriteKind {
-    export const Bug = SpriteKind.create()
-}
-sprites.onOverlap(SpriteKind.Player, SpriteKind.Bug, function (sprite, otherSprite) {
-    otherSprite.destroy(effects.warmRadial, 500)
+sprites.onOverlap(SpriteKind.Player, SpriteKind.Projectile, function (sprite, otherSprite) {
+    sprites.destroy(otherSprite)
 })
 let moth: Sprite = null
 scene.setBackgroundImage(img`
@@ -1706,36 +1496,30 @@ game.onUpdateInterval(500, function () {
         . . . f d b b f f c d f . . . 
         . . . . c f . . . f c . . . . 
         `, randint(-50, 50), randint(-50, 50))
-    moth.setKind(SpriteKind.Bug)
 })
 ```
 
-## Step 8
+## Step 7
 ♫ **Add Sound** ♫  
 
 ---
 
-- :headphone: Open **Music** and drag ``||music.play sound||`` 
-into the ``||sprites.overlaps||`` container.
+- :headphone: Open ``||music:Music||`` and drag ``||music:play sound||`` into the ``||sprites:overlaps||`` container.
 
-- :mouse pointer: Click ``||music.ba ding||`` to select a sound from the drop-down 
-menu.
+- :mouse pointer: Click ``||music:sound ba ding||`` to select a sound from the drop-down menu.
 
 ---
 
-*Click ``||scene.▶||`` and overlap with a bug to hear a sound.*
+Click ``||▶||`` and overlap with a bug to hear a sound.
 
 
-![Code Ninjas](https://github.com/sbannonCN/bug-collector/blob/master/CN%20logo-.jpg?raw=true "Code Ninjas")
+![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
 
 
 ```blocks
-namespace SpriteKind {
-    export const Bug = SpriteKind.create()
-}
-sprites.onOverlap(SpriteKind.Player, SpriteKind.Bug, function (sprite, otherSprite) {
-    otherSprite.destroy(effects.warmRadial, 500)
-    music.baDing.play()
+sprites.onOverlap(SpriteKind.Player, SpriteKind.Projectile, function (sprite, otherSprite) {
+    sprites.destroy(otherSprite)
+    music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.UntilDone)
 })
 let moth: Sprite = null
 scene.setBackgroundImage(img`
@@ -1897,36 +1681,32 @@ game.onUpdateInterval(500, function () {
         . . . f d b b f f c d f . . . 
         . . . . c f . . . f c . . . . 
         `, randint(-50, 50), randint(-50, 50))
-    moth.setKind(SpriteKind.Bug)
 })
 ```
 
-## Step 9
+## Step 8
 ❿ **Score** ❿
 
 *Earn a point for every bug caught!*
 
 ---
 
-- :info: Open **Info** and drag ``||info.set score||`` into ``||loops.on start||``.
+- :info: Open ``||info:Info||`` and drag ``||info:set score||`` into ``||loops:on start||``.
 
-- :info: Open **Info** and drag ``||info.change score||`` into ``||sprites.overlaps||`` container.
+- :info: Open ``||info:Info||`` and drag ``||info:change score||`` into the ``||sprites:overlaps||`` container.
 
 ---
 
-*Click ``||scene.▶||`` and overlap with a bug to see the score increase.*
+Click ``||▶||`` and overlap with a bug to see the score increase.
 
 
-![Code Ninjas](https://github.com/sbannonCN/bug-collector/blob/master/CN%20logo-.jpg?raw=true "Code Ninjas")
+![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
 
 
 ```blocks
-namespace SpriteKind {
-    export const Bug = SpriteKind.create()
-}
-sprites.onOverlap(SpriteKind.Player, SpriteKind.Bug, function (sprite, otherSprite) {
-    otherSprite.destroy(effects.warmRadial, 500)
-    music.baDing.play()
+sprites.onOverlap(SpriteKind.Player, SpriteKind.Projectile, function (sprite, otherSprite) {
+    sprites.destroy(otherSprite)
+    music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.UntilDone)
     info.changeScoreBy(1)
 })
 let moth: Sprite = null
@@ -2090,34 +1870,29 @@ game.onUpdateInterval(500, function () {
         . . . f d b b f f c d f . . . 
         . . . . c f . . . f c . . . . 
         `, randint(-50, 50), randint(-50, 50))
-    moth.setKind(SpriteKind.Bug)
 })
 ```
 
-## Step 10
+## Step 9
 ⏰ **Add Timer** ⏰ 
 
 ---
 
-- :info: Open **Info** and drag ``||info.start countdown||`` into 
-``||loops.on start||``.
+- :info: Open ``||info:Info||`` and drag ``||info:start countdown||`` into ``||loops:on start||``.
 
-- :mouse pointer: Set the timer length using the number in the white bubble.
+- :mouse pointer: Set the timer length by changing the number in the white bubble.
 
 ---
 
-*Click ``||scene.▶||`` and catch bugs until the timer ends and it's game over.*
+Click ``||▶||`` and catch bugs until the timer ends and it's game over.
 
 
-![Code Ninjas](https://github.com/sbannonCN/bug-collector/blob/master/CN%20logo-.jpg?raw=true "Code Ninjas")
+![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
 
 ```blocks
-namespace SpriteKind {
-    export const Bug = SpriteKind.create()
-}
-sprites.onOverlap(SpriteKind.Player, SpriteKind.Bug, function (sprite, otherSprite) {
-    otherSprite.destroy(effects.warmRadial, 500)
-    music.baDing.play()
+sprites.onOverlap(SpriteKind.Player, SpriteKind.Projectile, function (sprite, otherSprite) {
+    sprites.destroy(otherSprite)
+    music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.UntilDone)
     info.changeScoreBy(1)
 })
 let moth: Sprite = null
@@ -2282,38 +2057,31 @@ game.onUpdateInterval(500, function () {
         . . . f d b b f f c d f . . . 
         . . . . c f . . . f c . . . . 
         `, randint(-50, 50), randint(-50, 50))
-    moth.setKind(SpriteKind.Bug)
 })
 ```
 
-## Step 11
+## Step 10
 🖺 **Title & Directions** 🖺
 
 ---
 
-- :circle: Open **Game** and drag ``||game.splash||`` into *the top* of 
-``||loops.on start||``.  
+- :circle: Open ``||game:Game||`` and drag ``||game:splash||`` into *the top* of ``||loops:on start||``.  
 - :mouse pointer: Type the game's title into the white bubble.
 
-
-- :circle: Open **Game** and drag ``||game.show long text||`` under the splash 
-block.  
+- :circle: Open ``||game:Game||`` and drag ``||game:show long text||`` under the splash block.  
 - :mouse pointer: Type the directions for the game into the white bubble.
 
 ---
 
-*Click ``||scene.▶||`` to see the game title and instructions before the game starts.*
+Click ``||▶||`` to see the game title and instructions before the game starts.
 
 
-![Code Ninjas](https://github.com/sbannonCN/bug-collector/blob/master/CN%20logo-.jpg?raw=true "Code Ninjas")
+![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
 
 ```blocks
-namespace SpriteKind {
-    export const Bug = SpriteKind.create()
-}
-sprites.onOverlap(SpriteKind.Player, SpriteKind.Bug, function (sprite, otherSprite) {
-    otherSprite.destroy(effects.warmRadial, 500)
-    music.baDing.play()
+sprites.onOverlap(SpriteKind.Player, SpriteKind.Projectile, function (sprite, otherSprite) {
+    sprites.destroy(otherSprite)
+    music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.UntilDone)
     info.changeScoreBy(1)
 })
 let moth: Sprite = null
@@ -2480,7 +2248,6 @@ game.onUpdateInterval(500, function () {
         . . . f d b b f f c d f . . . 
         . . . . c f . . . f c . . . . 
         `, randint(-50, 50), randint(-50, 50))
-    moth.setKind(SpriteKind.Bug)
 })
 ``` 
 
@@ -2494,11 +2261,9 @@ game.onUpdateInterval(500, function () {
 
 ``|Test this out!|``
 
-- In ``||game.show long text||``, click on **bottom** and select a position from the 
-drop-down menu.
+- In ``||game:show long text||``, click on **bottom** and select a position from the drop-down menu.
 
-- Open **Game** and drag ``||game.set dialog frame||`` *before* ``||game.show long text||``. 
-Click on the grey oval to draw or choose a frame.
+- Open ``||game:Game||`` and drag ``||game:set dialog frame||`` *before* ``||game:show long text||``. Click on the grey oval to draw or choose a frame.
 
 ---
 
@@ -2506,16 +2271,13 @@ Click on the grey oval to draw or choose a frame.
 
 
 
-![Code Ninjas](https://github.com/sbannonCN/bug-collector/blob/master/CN%20logo-.jpg?raw=true "Code Ninjas")
+![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
 
 
 ```blocks
-namespace SpriteKind {
-    export const Bug = SpriteKind.create()
-}
-sprites.onOverlap(SpriteKind.Player, SpriteKind.Bug, function (sprite, otherSprite) {
-    otherSprite.destroy(effects.warmRadial, 500)
-    music.baDing.play()
+sprites.onOverlap(SpriteKind.Player, SpriteKind.Projectile, function (sprite, otherSprite) {
+    sprites.destroy(otherSprite)
+    music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.UntilDone)
     info.changeScoreBy(1)
 })
 let moth: Sprite = null
@@ -2707,7 +2469,6 @@ game.onUpdateInterval(500, function () {
         . . . f d b b f f c d f . . . 
         . . . . c f . . . f c . . . . 
         `, randint(-50, 50), randint(-50, 50))
-    moth.setKind(SpriteKind.Bug)
 })
 ```
 
@@ -2717,9 +2478,8 @@ game.onUpdateInterval(500, function () {
 
 ---
 
-When you select the **Done** button, you'll have a chance to share your project 
-link with others!
+When you select the **Done** button, you'll have a chance to share your project link with others!
 
 ---
 
-![Code Ninjas](https://github.com/sbannonCN/bug-collector/blob/master/CN%20logo-.jpg?raw=true "Code Ninjas")
+![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
