@@ -12,7 +12,8 @@
         "assets.json",
         "nye.md",
         "santa.md",
-        "bug-collector.md"
+        "bug-collector.md",
+        "malware.md"
     ],
     "testFiles": [
         "test.ts"
