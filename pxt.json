@@ -13,7 +13,7 @@
         "nye.md",
         "santa.md",
         "bug-collector.md",
-        "malware.md"
+        "defeat.md"
     ],
     "testFiles": [
         "test.ts"
